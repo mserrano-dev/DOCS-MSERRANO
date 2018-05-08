@@ -1,0 +1,60 @@
+@import 'Const';
+@import '../pages';
+
+.page--sitedown {
+    @extend %page;
+
+    .page__toolbar {
+        background: rgba($color-primary, 0.6);
+        border-bottom: 6px solid rgba($color-secondary, 0.6);
+        box-shadow: 
+            0 5px 5px -3px rgba(0,0,0,.2), 
+            0 8px 10px 1px rgba(0,0,0,.14), 
+            0 3px 14px 2px rgba(0,0,0,.12);
+    }
+    .page__content {
+        height: 100%;
+        background: transparent;
+
+        .sitedown {
+            min-width: 36%;
+            margin-top: $unit*8;
+            padding: $unit*4;
+
+            background: $white;
+            border-radius: $unit/4;
+            font-size: 32px;
+            text-align: center;
+            
+            opacity: 0.96;
+
+            .sitedown__decor {
+                font-weight: 600;
+            }
+            .sitedown__text {
+            }
+        }
+    }
+
+    .leftside {
+        margin-left: $unit;
+        padding: $unit;
+
+        .leftside__logo {
+
+        }
+    }
+}
+.fixed-bottom-right {
+    position: fixed;
+    right: $unit;
+    bottom: $unit;
+    
+    .button__text {
+        font-size: 26px;
+    }
+}
+.tooltip__text {
+    font-size: $font-title;
+    padding: $unit*3;
+}

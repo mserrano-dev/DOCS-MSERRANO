@@ -1,0 +1,35 @@
+/*------------------------------------*\
+  # _api_layer.spec.scss
+\*------------------------------------*/
+/* --- Spacing --- */
+@include it('_api_layer.spec.scss : Spacing : unit') {
+    @include assert-true(variable-exists('unit'));
+}
+
+/* --- Fonts --- */
+@include it('_api_layer.spec.scss : Fonts : font-family') {
+    @include assert-true(variable-exists('font-family'));
+}
+@include it('_api_layer.spec.scss : Fonts : font-text') {
+    @include assert-true(variable-exists('font-text'));
+}
+@include it('_api_layer.spec.scss : Fonts : font-title') {
+    @include assert-true(variable-exists('font-title'));
+}
+@include it('_api_layer.spec.scss : Fonts : font-sub') {
+    @include assert-true(variable-exists('font-sub'));
+}
+
+/* --- Colors --- */
+@include it('_api_layer.spec.scss : Colors : primary-dark') {
+    @include assert-true(variable-exists('color-primary-dark0'));
+}
+@include it('_api_layer.spec.scss : Colors : primary-light') {
+    @include assert-true(variable-exists('color-primary-light0'));
+}
+@include it('_api_layer.spec.scss : Colors : secondary-dark') {
+    @include assert-true(variable-exists('color-secondary-dark0'));
+}
+@include it('_api_layer.spec.scss : Colors : secondary-light') {
+    @include assert-true(variable-exists('color-secondary-light0'));
+}

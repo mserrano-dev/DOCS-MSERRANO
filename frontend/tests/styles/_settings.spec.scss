@@ -1,0 +1,29 @@
+/*------------------------------------*\
+  # _settings.spec.scss
+\*------------------------------------*/
+/* --- Spacing --- */
+@include it('_settings.spec.scss : Spacing : unit') {
+    @include assert-true(variable-exists('unit'));
+}
+
+/* --- Fonts --- */
+@include it('_settings.spec.scss : Fonts : font-family') {
+    @include assert-true(variable-exists('font-family'));
+}
+@include it('_settings.spec.scss : Fonts : font-text') {
+    @include assert-true(variable-exists('font-text'));
+}
+@include it('_settings.spec.scss : Fonts : font-title') {
+    @include assert-true(variable-exists('font-title'));
+}
+@include it('_settings.spec.scss : Fonts : font-sub') {
+    @include assert-true(variable-exists('font-sub'));
+}
+
+/* --- Colors --- */
+@include it('_settings.spec.scss : Colors : primary') {
+    @include assert-true(variable-exists('color-primary'));
+}
+@include it('_settings.spec.scss : Colors : secondary') {
+    @include assert-true(variable-exists('color-secondary'));
+}

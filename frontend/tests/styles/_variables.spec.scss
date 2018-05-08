@@ -1,0 +1,22 @@
+/*------------------------------------*\
+  # _variables.spec.scss
+\*------------------------------------*/
+/* --- Media Breakpoints --- */
+@include it('_variables.spec.scss : Media Breakpoints : breakpoint-sm') {
+    @include assert-true(variable-exists('breakpoint-sm'));
+}
+@include it('_variables.spec.scss : Media Breakpoints : breakpoint-md') {
+    @include assert-true(variable-exists('breakpoint-md'));
+}
+@include it('_variables.spec.scss : Media Breakpoints : breakpoint-lg') {
+    @include assert-true(variable-exists('breakpoint-lg'));
+}
+@include it('_variables.spec.scss : Media Breakpoints : breakpoint-xl') {
+    @include assert-true(variable-exists('breakpoint-xl'));
+}
+
+/* --- Colors --- */
+@include it('_variables.spec.scss : Colors') {
+    @include assert-true(variable-exists('black'));
+    @include assert-true(variable-exists('white'));
+}

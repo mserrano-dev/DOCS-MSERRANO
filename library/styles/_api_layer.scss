@@ -1,0 +1,55 @@
+/*------------------------------------*\
+  # Communication Layer to App
+    Note: this is for REFERENCE ONLY!!
+\*------------------------------------*/
+/* --- Spacing --- */
+$unit: $unit;
+
+/* --- Fonts --- */
+$font-family: $font-family;
+$font-text: $font-text;
+$font-title: $font-title;
+$font-sub: $font-sub;
+
+/* --- Colors --- */
+$color-primary-dark0: $color-primary;
+$color-primary-dark10: darken($color-primary, 10%);
+$color-primary-dark20: darken($color-primary, 20%);
+$color-primary-dark30: darken($color-primary, 30%);
+$color-primary-dark40: darken($color-primary, 40%);
+$color-primary-dark50: darken($color-primary, 50%);
+$color-primary-dark60: darken($color-primary, 60%);
+$color-primary-dark70: darken($color-primary, 70%);
+$color-primary-dark80: darken($color-primary, 80%);
+$color-primary-dark90: darken($color-primary, 90%);
+$color-primary-light0: $color-primary;
+$color-primary-light10: lighten($color-primary, 10%);
+$color-primary-light20: lighten($color-primary, 20%);
+$color-primary-light30: lighten($color-primary, 30%);
+$color-primary-light40: lighten($color-primary, 40%);
+$color-primary-light50: lighten($color-primary, 50%);
+$color-primary-light60: lighten($color-primary, 60%);
+$color-primary-light70: lighten($color-primary, 70%);
+$color-primary-light80: lighten($color-primary, 80%);
+$color-primary-light90: lighten($color-primary, 90%);
+
+$color-secondary-dark0: $color-secondary;
+$color-secondary-dark10: darken($color-secondary, 10%);
+$color-secondary-dark20: darken($color-secondary, 20%);
+$color-secondary-dark30: darken($color-secondary, 30%);
+$color-secondary-dark40: darken($color-secondary, 40%);
+$color-secondary-dark50: darken($color-secondary, 50%);
+$color-secondary-dark60: darken($color-secondary, 60%);
+$color-secondary-dark70: darken($color-secondary, 70%);
+$color-secondary-dark80: darken($color-secondary, 80%);
+$color-secondary-dark90: darken($color-secondary, 90%);
+$color-secondary-light0: $color-secondary;
+$color-secondary-light10: lighten($color-secondary, 10%);
+$color-secondary-light20: lighten($color-secondary, 20%);
+$color-secondary-light30: lighten($color-secondary, 30%);
+$color-secondary-light40: lighten($color-secondary, 40%);
+$color-secondary-light50: lighten($color-secondary, 50%);
+$color-secondary-light60: lighten($color-secondary, 60%);
+$color-secondary-light70: lighten($color-secondary, 70%);
+$color-secondary-light80: lighten($color-secondary, 80%);
+$color-secondary-light90: lighten($color-secondary, 90%);

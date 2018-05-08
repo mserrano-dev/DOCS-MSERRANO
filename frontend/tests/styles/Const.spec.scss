@@ -1,0 +1,21 @@
+@import "true";
+@import "Const";
+
+/*------------------------------------*\
+  # Const.spec.scss
+\*------------------------------------*/
+@include describe('_variables.scss') {
+    @import "_variables.spec";
+}
+@include describe('_tools.scss') {
+    @import "_tools.spec";
+}
+@include describe('_settings.scss') {
+    @import "_settings.spec";
+}
+@include describe('_api_layer.scss') {
+    @import "_api_layer.spec";
+}
+
+@debug '++++++++++++++++++++++++++++++++++++++++++++';
+@include report;

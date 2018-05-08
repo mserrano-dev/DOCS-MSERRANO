@@ -1,0 +1,22 @@
+@import 'Const';
+
+body {
+    overflow: hidden;
+    font-family: $font-family;
+    font-size: $font-text;
+
+    background: url('/resources/img/wp_sitedown.jpg');
+    background-size: cover;
+}
+
+%page {
+    .md-button {
+        background: rgba($color-primary, 0.6);
+        color: $white;
+        
+        &.md-raised:not([disabled]):hover,
+        &.md-fab:not([disabled]):hover {
+            background: $color-primary-dark10;
+        }
+    }
+}

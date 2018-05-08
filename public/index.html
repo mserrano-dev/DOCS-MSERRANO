@@ -1,0 +1,61 @@
+<html>
+    <head>
+        <title ng-bind="'DOCS-MSERRANO'"></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            html {
+                height:100%;
+                width:100%;
+                background: #FFF;
+            }
+            body {
+                height: 100%;
+                margin: 0;
+            }
+            .container {
+                position: fixed;
+                top: 20%;
+                display: table;
+                width: 100%;
+            }
+            .dot-dot-dot {
+                display: table-cell;
+                vertical-align: middle;
+                text-align: center;
+                font-size: 40px;
+            }
+            .dot {
+                opacity: 1;
+                animation: dot-anim 2s infinite;
+            }
+            .one {
+                animation-delay: 0.0s;
+            }
+            .two {
+                animation-delay: 0.21s;
+            }
+            .three {
+                animation-delay: 0.42s;
+            }
+            @keyframes dot-anim {
+                0% { opacity: 1; }
+                50% { opacity: 1; }
+                90% { opacity: .1; }
+                100% { opacity: .1; }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="pre-loaded pre-spinner container">
+            <div class="dot-dot-dot">
+                <span class="dot one">.</span>
+                <span class="dot two">.</span>
+                <span class="dot three">.</span>
+            </div>
+        </div>
+        <div ng-view></div>
+        <script src="/vendor.mserrano.js"></script>
+        <script id="apploader" src="/apploader.min.js?js=docs.mserrano.js&css=docs.mserrano.css&const=%2Fdocs_constants&app=docs"></script>
+    </body>
+</html>

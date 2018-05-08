@@ -1,0 +1,57 @@
+/*------------------------------------*\
+  # Tools
+    Note: use @include to use mixins.
+          use fn_name() to use functions.
+
+          Sass data types include:
+            + numbers
+            + strings
+            + colors
+            + booleans
+            + lists
+\*------------------------------------*/
+/* --- Functions --- */
+@function inverse($percent) {
+    @return (100 - $percent);
+}
+@function begins-with($string, $find) {
+    @return str-slice($string, 0, str-length($find)) == $find
+}
+@function strip($string, $to_strip) {
+    @if str-index($string, $to_strip) == 1 {
+        @return str-slice($string, str-length($to_strip) + 1)
+    }
+    @else {
+        @return $string
+    }
+}
+
+/* --- Mixins --- */
+@mixin layout($breakpoint) {
+    $stripped: strip($breakpoint, 'gt-');
+    $equal: map-get((
+        'xl': $breakpoint-xl,
+        'lg': $breakpoint-lg,
+        'md': $breakpoint-md,
+        'sm': $breakpoint-sm,
+        'xs': 0, // min
+        ), $stripped);
+    $next: map-get((
+        'xl': $breakpoint-xl, // max
+        'lg': $breakpoint-xl,
+        'md': $breakpoint-lg,
+        'sm': $breakpoint-md,
+        'xs': $breakpoint-sm,
+        ), $stripped);
+
+    @if begins-with($breakpoint, 'gt-') or $stripped == 'xl' {
+        @media screen and (min-width: $next) {
+            @content;
+        }
+    }
+    @else {
+        @media screen and (min-width: $equal) and (max-width: $next - 1) {
+            @content;
+        }
+    }
+}
